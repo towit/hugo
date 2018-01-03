@@ -3,8 +3,6 @@ title = "Contact"
 id = "contact"
 +++
 
-# We are here to help you
+# 在这里，我们能够帮助解决一些棘手的问题，您只需告诉我们您的联系方式。
 
-Are you curious about something? Do you have some kind of problem with our products? As am hastily invited settled at limited civilly fortune me. Really spring in extent an by. Judge but built gay party world. Of so am he remember although required. Bachelor unpacked be advanced at. Confined in declared marianne is vicinity.
-
-Please feel free to contact us, our customer service center is working for you 24/7.
+请随时与我们联系，我们的客户服务中心全天候为您服务。

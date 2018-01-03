@@ -1,13 +1,13 @@
 baseurl = "https://www.tojia.me/"
-title = "Universal"
+title = "云溪部落"
 theme = "hugo-universal-theme"
-languageCode = "en-us"
+languageCode = "zh"
 # Site language. Available translations in the theme's `/i18n` directory.
 defaultContentLanguage = "zh"
 # Enable comments by entering your Disqus shortname
 # disqusShortname = "devcows"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+# googleAnalytics = ""
 
 # Define the number of posts per page
 paginate = 10
@@ -70,26 +70,29 @@ paginate = 10
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
+    email = "chunxiaqiu13@gmail.com"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    about_us = """<p><strong>法法来生，精心细作。</strong>
+        <br><a href="https://www.facebook.com/chunfengxiayu" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/chunfengxia" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+        <a href="chunxiaqiu13@gmail.com" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>    
+        <br>以事实为基础；
+        <br>以法律为准绳；
+        <br>精心诠释问题；
+        <br>智慧享乐一生。
+      </p>
+      """
     copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     logo = "img/logo.png"
-    address = """<p><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
+    address = """<p><strong>云溪部落</strong>
+        <br>中国 * 北京
+        <br><a href="mailto:chunxiaqiu13@gmail.com">联系<b>云溪部落</b></a>
       </p>
       """
-#    latitude = "-12.043333"
-#    longitude = "-77.028333"
 
 [Permalinks]
     blog = "/blog/:year/:month/:day/:filename/"
@@ -117,36 +120,18 @@ paginate = 10
 
 [params.features]
     enable = true
-    # All features are defined in their own files. You can find example items
-    # at 'exampleSite/data/features'.
-    # For more informtion take a look at the README.
+    title = "专注领域"
 
-[params.testimonials]
+[params.recent_posts]
     enable = true
-    # All testimonials are defined in their own files. You can find example items
-    # at 'exampleSite/data/testimonials'.
-    # For more informtion take a look at the README.
-    title = "Testimonials"
-    subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
+    title = "热点案例解析"
+    subtitle = "<center>随手笔录，抒情、叙事或评论不拘，篇幅短小。学习、听课、读书时所作的记录。</center>"
+
 
 [params.see_more]
     enable = true
     icon = "fa fa-file-code-o"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
-
-[params.clients]
-    enable = true
-    # All clients are defined in their own files. You can find example items
-    # at 'exampleSite/data/clients'.
-    # For more informtion take a look at the README.
-    title = "Our Clients"
-    subtitle = ""
-
-[params.recent_posts]
-    enable = true
-    title = "From our blog"
-    subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
-
+    title = "如果你有更多的疑问，联系我们?"
+    subtitle = "请转到联系我们页面，描述相关问题，以便我们第一时间联系您"
+    link_url = "https://www.xinwu.me/contact/"
+    link_text = "联系我们"
