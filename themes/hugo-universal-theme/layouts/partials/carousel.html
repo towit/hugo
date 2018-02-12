@@ -4,6 +4,11 @@
 <section>
     <div class="home-carousel">
         <div class="dark-mask"></div>
+	<ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
         <div class="container">
             <div class="homepage owl-carousel">
                 {{ range sort .Site.Data.carousel "weight" }}
@@ -16,6 +21,15 @@
                         <div class="col-sm-7">
                             <img class="img-responsive" src="{{ .image }}" alt="">
                         </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
                     </div>
                 </div>
                 {{ end }}
@@ -23,17 +37,6 @@
             <!-- /.project owl-slider -->
         </div>
     </div>
- 
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
-    {{ range $paginator.Pages }}
-      <div class="carousel-item active">
-        <img class="d-block img-fluid" src="{{ .image }}" alt="{{ .image }}">
-      </div>
-    {{ end }}
-  </div>
-</div>
 </section>
 {{ end }}
 {{ end }}
