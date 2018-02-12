@@ -23,6 +23,17 @@
             <!-- /.project owl-slider -->
         </div>
     </div>
+ 
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "posts") }}
+    {{ range $paginator.Pages }}
+      <div class="carousel-item active">
+        <img class="d-block img-fluid" src="{{ .image }}" alt="{{ .image }}">
+      </div>
+    {{ end }}
+  </div>
+</div>
 </section>
 {{ end }}
 {{ end }}
