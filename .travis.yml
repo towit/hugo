@@ -11,13 +11,12 @@ sudo: true
 dist: trusty
 
 before_install:
-  - sudo apt-get --yes install snapd
-  - sudo snap install hugo
+  - sudo apt-get install hugo
   - git config --global user.name "towit"
   - git config --global user.email "ziyou@topluo.com"
 
 script:
-- hugo --theme=hugo-universal-theme --buildDrafts --baseUrl="https://luolvshi.me/hugo/"
+- hugo --theme=hugo-universal-theme --buildDrafts --baseUrl="https://www.xinwu.me"
 
 after_success:
 - cd ./public
