@@ -17,7 +17,7 @@ before_install:
   - git config --global user.email "ziyou@topluo.com"
 
 script:
-- hugo --theme=blackburn --buildDrafts --baseUrl="https://luolvshi.me/hugo/"
+- hugo --theme=hugo-universal-theme --buildDrafts --baseUrl="https://luolvshi.me/hugo/"
 
 after_success:
 - cd ./public
