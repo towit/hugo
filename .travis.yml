@@ -13,11 +13,11 @@ dist: trusty
 before_install:
   - sudo apt-get --yes install snapd
   - sudo snap install hugo
-  - git config --global user.name "fydy"
-  - git config --global user.email "edu@yuns.me"
+  - git config --global user.name "towit"
+  - git config --global user.email "ziyou@topluo.com"
 
 script:
-- /snap/bin/hugo --theme=hugo-universal-theme --baseUrl="https://luolvshi.me/hugo/"
+- hugo --theme=blackburn --buildDrafts --baseUrl="https://luolvshi.me/hugo/"
 
 after_success:
 - cd ./public
@@ -25,5 +25,5 @@ after_success:
 - git add --all .
 - git commit -m "Travis CI Auto Builder"
 # 这里的 REPO_TOKEN 即之前在 travis 项目的环境变量里添加的
-- git push --quiet --force https://$hugo@github.com/fydy/hugo.git
+- git push --quiet --force https://$hugo@github.com/towit/hugo.git
   master
