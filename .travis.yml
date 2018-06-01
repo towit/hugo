@@ -17,7 +17,7 @@ before_install:
   - git config --global user.email "ziyou@topluo.com"
 
 script:
-- /snap/bin/hugo --theme=hugo-universal-theme --buildDrafts --baseUrl="https://www.xinwu.me"
+- hugo --theme=hugo-universal-theme --buildDrafts --baseUrl="https://www.xinwu.me"
 
 after_success:
 - cd ./public
